@@ -69,7 +69,7 @@ export default function Header() {
                 key={to}
                 href={to}
                 className={`text-[11px] tracking-[0.18em] uppercase font-medium transition-colors duration-200 ${
-                  (to === '/' ? pathname === '/' : pathname.startsWith(to))
+                  (to === '/' ? pathname === '/' : pathname?.startsWith(to))
                     ? 'text-tf-bronze' : 'text-tf-offwhite hover:text-white'
                 }`}
               >
@@ -111,7 +111,7 @@ export default function Header() {
               key={to}
               href={to}
               className={`font-display text-5xl font-700 tracking-wider uppercase transition-colors duration-200 ${
-                (to === '/' ? pathname === '/' : pathname.startsWith(to))
+                (to === '/' ? pathname === '/' : pathname?.startsWith(to))
                   ? 'text-tf-bronze' : 'text-tf-offwhite hover:text-tf-bronze-light'
               }`}
             >

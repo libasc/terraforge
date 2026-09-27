@@ -18,7 +18,8 @@ function useInView(threshold = 0.1) {
 }
 
 export default function ServiceDetailPage() {
-  const { id } = useParams();
+  const params = useParams();
+const id = typeof params?.id === 'string' ? params.id : '';
   const service = SERVICES.find(s => s.id === id);
   const allServices = SERVICES;
 

@@ -8,7 +8,8 @@ import Lightbox from '@/components/Lightbox';
 import { useSEO } from '@/hooks/useSEO';
 
 export default function ProjectDetailPage() {
-  const { slug } = useParams();
+  const params = useParams();
+const slug = typeof params?.slug === 'string' ? params.slug : '';
   const project = PROJECTS.find(p => p.slug === slug);
 
   useSEO({

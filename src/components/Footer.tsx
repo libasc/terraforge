@@ -89,9 +89,20 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 py-6 text-[10px] tracking-[0.12em] uppercase text-tf-mid">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 py-6 text-[12px] tracking-[0.12em] text-tf-mid">
           <p>© 2026 Terraforge Engineering. All Rights Reserved.</p>
           <div className="flex gap-6">
+            <div>Developed By <a
+  href="https://www.softbild.com"
+  className=""
+  style={{
+    background: "linear-gradient(90deg, rgba(26, 144, 113, 1), rgba(35, 207, 167, 1) 54%, rgba(11, 163, 209, 1))",
+    WebkitBackgroundClip: "text",
+    WebkitTextFillColor: "transparent",
+  }}
+>
+  SoftBild
+</a></div>
             <a href="#" className="hover:text-tf-sand transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-tf-sand transition-colors">Terms of Use</a>
           </div>
